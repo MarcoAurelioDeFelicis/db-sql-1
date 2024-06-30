@@ -1,0 +1,53 @@
+use db_university;
+
+#1
+SELECT *
+FROM teachers t 
+;
+
+#2
+SELECT head_of_department
+FROM departments d 
+;
+
+#3
+SELECT *
+FROM degrees d 
+WHERE `level` = 'magistrale'
+;
+
+#4
+SELECT *
+FROM students s 
+WHERE name = "Marco"
+;
+
+#5
+SELECT * 
+FROM courses c 
+WHERE cfu >= "12"
+;
+
+#6
+SELECT *
+FROM courses c 
+WHERE cfu > "10"
+OR cfu < "5"
+;
+
+#7
+SELECT *
+FROM courses c 
+WHERE period = 'I semestre' AND `year`= 1
+;
+
+#8
+SELECT *
+FROM course_teacher ct 
+;
+
+#9
+SELECT *
+FROM teachers t 
+WHERE phone IS NOT NULL 
+;
