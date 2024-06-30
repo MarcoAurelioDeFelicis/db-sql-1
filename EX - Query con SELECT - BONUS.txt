@@ -1,0 +1,21 @@
+use db_university;
+
+#BONUS
+
+#10
+SELECT *
+FROM students s 
+WHERE name LIKE 'E%'
+;
+
+#11
+SELECT COUNT(*) AS insegnanti_E
+FROM teachers t 
+WHERE name LIKE 'E%'
+;
+
+#12
+SELECT COUNT(*) AS insegnanti_no_tel
+FROM teachers t 
+WHERE phone IS NULL  
+
